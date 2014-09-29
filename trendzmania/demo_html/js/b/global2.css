@@ -1,0 +1,1073 @@
+.back-to-top {
+    background-image: url("/static/images/compass/icons2x-saf7fa95ea3.png");
+    background-position: 0 -1623.5px;
+    background-size: 127px auto, auto auto;
+}
+}
+.back-to-top-bottom {
+    position: absolute;
+    right: -44px !important;
+    top: -44px;
+}
+.back-to-top {
+    right: 0 !important;
+}
+.back-to-top-bottom {
+    right: 0 !important;
+}
+#js-promotion-banners{ float:left;}
+.cycle-slide p strong{ font-weight:bold;}
+.promotion-banners {
+    border: 0 none;
+    color: #000;
+    cursor: pointer;
+    font-size: 12px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.promotion-banners li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+}
+.promotion-banners li {
+    margin: 0;
+    padding: 10px 0 0;
+}
+.promotion-banners li p {
+    margin: 0;
+    padding: 0;
+}
+.promotion-banners li img {
+    margin-top: -10px;
+}
+.promotion-banners a {
+    text-decoration: underline;
+}
+.promotion-banners a img {
+    border: 0 none;
+}
+.promotion-banners p {
+    font-size: 12px;
+}
+.promotion-detail-container {
+    margin: 0 auto;
+    position: relative;
+    width: 1024px;
+}
+.promotion-details {
+    background-color: #fff;
+    border-color: #000 #d2d2d2 #d2d2d2;
+    border-style: solid;
+    border-width: 2px 1px 1px;
+    color: #000;
+    left: -133px;
+    padding: 36px 32px 16px;
+    position: absolute;
+    top: 74px !important;
+    width: 590px;
+    z-index: 1170;
+}
+.is-promotion-details-wider {
+    width: 920px;
+}
+.promotion-details-close-button {
+    color: #d2d2d2;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    text-decoration: none;
+    top: 20px;
+    transition: color 200ms ease 0s;
+	height:25px;
+	width:25px;
+}
+.promotion-details-close-button span{ display:block; background:url(../../images/close-nor.png) no-repeat; width:25px; height:25px;}
+.promotion-details-close-button:hover span{ display:block; background:url(../../images/close-hov.png) no-repeat; width:25px; height:25px;}
+.promotion-details-close-button:hover {
+    color: #000;
+}
+.promotion-details-close-button .font-icon-close {
+    display: block;
+}
+.promotion-details-heading {
+    border-bottom: 1px solid #d2d2d2;
+    line-height: normal;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+	background:none;
+}
+.promotion-details-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+.promotion-details-title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 5px 0 1px;
+}
+.promotion-details-tagline {
+    font-size: 12px;
+    line-height: normal;
+    margin: 10px 0 0;
+}
+.promotion-details-title + .promotion-details-cutoff, .promotion-details-title + .promotion-details-usage, .promotion-details-tagline + .promotion-details-cutoff, .promotion-details-tagline + .promotion-details-usage {
+    margin-top: 15px;
+}
+.promotion-details-cutoff, .promotion-details-usage {
+    font-size: 14px;
+    line-height: normal;
+    margin: 9px 0 0;
+}
+.promotion-details-disclaimer h1, .promotion-details-disclaimer h2, .promotion-details-disclaimer h3, .promotion-details-disclaimer h4, .promotion-details-disclaimer h5, .promotion-details-disclaimer h6, .promotion-details-disclaimer p, .promotion-details-disclaimer table {
+    line-height: 1.475;
+}
+.promotion-details-disclaimer h1, .promotion-details-disclaimer h2, .promotion-details-disclaimer h3, .promotion-details-disclaimer h4, .promotion-details-disclaimer h5, .promotion-details-disclaimer h6 {
+    font-size: 12px;
+    margin: 0;
+}
+.promotion-details-disclaimer p, .promotion-details-disclaimer table {
+    margin: 0 0 20px;
+}
+.promotion-details-disclaimer p, .promotion-details-disclaimer td {
+    font-size: 11px;
+}
+.promotion-details-disclaimer table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 100%;
+}
+.promotion-details-disclaimer th {
+    font-size: 13px;
+}
+.promotion-details-disclaimer th, .promotion-details-disclaimer td {
+    border: 1px solid #e8e8e8;
+    padding: 8px;
+    text-align: center;
+}
+.promotion-details-disclaimer p a{ color:#000;}
+.promotion-details-disclaimer thead tr {
+    background-color: #efefef;
+}
+.action-link {
+    -moz-user-select: none;
+    color: #000;
+    cursor: pointer;
+    font-size: inherit;
+    line-height: inherit;
+}
+.action-link .action-link-text {
+    border-bottom: 1px solid #c1c1c1;
+    display: inline-block;
+    line-height: 1;
+    transition: border-bottom-color 200ms ease 0s;
+    vertical-align: middle;
+}
+.action-link .font-icon {
+    margin-top: -1px;
+    vertical-align: middle;
+}
+.action-link .font-icon + .action-link-text {
+    line-height: 1;
+    margin-left: 4px;
+    vertical-align: middle;
+}
+.action-link:hover {
+    text-decoration: none;
+}
+.action-link:hover .action-link-text {
+    border-bottom-color: #000;
+    text-decoration: none;
+}
+.action-link:hover .font-icon {
+    text-decoration: none;
+}
+.action-link:active {
+    opacity: 0.6;
+}
+.lt-ie8 .action-link .action-link-text {
+    line-height: normal;
+}
+@keyframes fadeIn {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
+@keyframes fadeIn {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
+@keyframes fadeInUp {
+0% {
+    opacity: 0;
+    transform: translateY(20px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0px);
+}
+}
+@keyframes fadeInUp {
+0% {
+    opacity: 0;
+    transform: translateY(20px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0px);
+}
+}
+@keyframes fadeInDown {
+0% {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0px);
+}
+}
+@keyframes fadeInDown {
+0% {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0px);
+}
+}
+@keyframes fadeInRight {
+0% {
+    opacity: 0;
+    transform: translateX(20px);
+}
+100% {
+    opacity: 1;
+    transform: translateX(0px);
+}
+}
+@keyframes fadeInRight {
+0% {
+    opacity: 0;
+    transform: translateX(20px);
+}
+100% {
+    opacity: 1;
+    transform: translateX(0px);
+}
+}
+@keyframes fadeInLeft {
+0% {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+100% {
+    opacity: 1;
+    transform: translateX(0px);
+}
+}
+@keyframes fadeInLeft {
+0% {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+100% {
+    opacity: 1;
+    transform: translateX(0px);
+}
+}
+@keyframes fadeInUpBig {
+0% {
+    opacity: 0;
+    transform: translateY(2000px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0px);
+}
+}
+@keyframes fadeInUpBig {
+0% {
+    opacity: 0;
+    transform: translateY(2000px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0px);
+}
+}
+@keyframes fadeInDownBig {
+0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0px);
+}
+}
+@keyframes fadeInDownBig {
+0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0px);
+}
+}
+@keyframes fadeInRightBig {
+0% {
+    opacity: 0;
+    transform: translateX(2000px);
+}
+100% {
+    opacity: 1;
+    transform: translateX(0px);
+}
+}
+@keyframes fadeInRightBig {
+0% {
+    opacity: 0;
+    transform: translateX(2000px);
+}
+100% {
+    opacity: 1;
+    transform: translateX(0px);
+}
+}
+@keyframes fadeInLeftBig {
+0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+}
+100% {
+    opacity: 1;
+    transform: translateX(0px);
+}
+}
+@keyframes fadeInLeftBig {
+0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+}
+100% {
+    opacity: 1;
+    transform: translateX(0px);
+}
+}
+.is-hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+.promotion-details-title, #bc_email_form .form-head #chat-title, #bc_email_form_tks .form-head #chat-title, div.page-title, .promotion-banner-top-global .promotion-banners-title, .checkout-banner-short .promotion-banners-title, .browser-warning h3, .promotion-details-subtitle, #bc_email_form .cancel_submit_wrapper .sfa-button, #bc_email_form_tks .cancel_submit_wrapper .sfa-button, .browser-warning p, .promotion-banner-top-global .promotion-banners-detail, .checkout-banner-long .promotion-banners-detail, .checkout-banner-short .promotion-banners-detail, .promotion-banners, .promotion-details-tagline, .promotion-details-cutoff, .promotion-details-usage, .promotion-details-disclaimer p, .promotion-details-disclaimer td, #bc_email_form, #bc_email_form_tks, #bc_email_form .form-head #intro-message, #bc_email_form_tks .form-head #intro-message, #bc_email_form .field label, #bc_email_form_tks .field label, #bc_email_form .field p, #bc_email_form_tks .field p, #bc_email_form .thank-you-msg, #bc_email_form_tks .thank-you-msg, .promotion-banner-top-global .promotion-banners-detail span, .checkout-banner-long .promotion-banners-title, .checkout-banner-long .promotion-banners-detail span, .checkout-banner-short .promotion-banners-detail span, .promotion-banners b, .promotion-banners strong, .promotion-details-cutoff strong, .promotion-details-cutoff b, .promotion-details-usage strong, .promotion-details-usage b, .promotion-details-disclaimer h1, .promotion-details-disclaimer h2, .promotion-details-disclaimer h3, .promotion-details-disclaimer h4, .promotion-details-disclaimer h5, .promotion-details-disclaimer h6, .promotion-details-disclaimer strong, .promotion-details-disclaimer b, .promotion-details-disclaimer th, #bc_email_form .field label .field-label, #bc_email_form_tks .field label .field-label {
+    font-weight: 400;
+}
+.promotion-details-title, #bc_email_form .form-head #chat-title, #bc_email_form_tks .form-head #chat-title, div.page-title {
+    font-family: "Gotham 4r","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.promotion-banner-top-global .promotion-banners-title, .checkout-banner-short .promotion-banners-title {
+    font-family: "Gotham Narrow 7r","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.browser-warning h3, .promotion-details-subtitle {
+    font-family: "Gotham SSm 4r","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#bc_email_form .cancel_submit_wrapper .sfa-button, #bc_email_form_tks .cancel_submit_wrapper .sfa-button {
+    font-family: "Gotham SSm 5r","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.browser-warning p, .promotion-banner-top-global .promotion-banners-detail, .checkout-banner-long .promotion-banners-detail, .checkout-banner-short .promotion-banners-detail, .promotion-banners, .promotion-details-tagline, .promotion-details-cutoff, .promotion-details-usage, .promotion-details-disclaimer p, .promotion-details-disclaimer td, #bc_email_form, #bc_email_form_tks, #bc_email_form .form-head #intro-message, #bc_email_form_tks .form-head #intro-message, #bc_email_form .field label, #bc_email_form_tks .field label, #bc_email_form .field p, #bc_email_form_tks .field p, #bc_email_form .thank-you-msg, #bc_email_form_tks .thank-you-msg {
+    font-family: "Gotham Narrow SSm 5r","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.promotion-banner-top-global .promotion-banners-detail span, .checkout-banner-long .promotion-banners-title, .checkout-banner-long .promotion-banners-detail span, .checkout-banner-short .promotion-banners-detail span, .promotion-banners b, .promotion-banners strong, .promotion-details-cutoff strong, .promotion-details-cutoff b, .promotion-details-usage strong, .promotion-details-usage b, .promotion-details-disclaimer h1, .promotion-details-disclaimer h2, .promotion-details-disclaimer h3, .promotion-details-disclaimer h4, .promotion-details-disclaimer h5, .promotion-details-disclaimer h6, .promotion-details-disclaimer strong, .promotion-details-disclaimer b, .promotion-details-disclaimer th, #bc_email_form .field label .field-label, #bc_email_form_tks .field label .field-label {
+    font-family: "Gotham Narrow SSm 7r","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#bt_invite_box {
+    position: fixed !important;
+}
+#bt_invite_box .invite_box {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.9);
+    color: #fff;
+    display: inline-block;
+    margin: 0;
+    padding: 68px 34px;
+    text-align: center;
+}
+#bt_invite_box .invite_box span.close {
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+#bt_invite_box .invite_box .font-icon-close:before {
+    color: #fff;
+    font-size: 20px;
+}
+#bt_invite_box .invite_box h3 {
+    color: #fff;
+    font-family: "Gotham 4r","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 0.8;
+    margin: 0 0 20px;
+}
+#bt_invite_box .invite_box p {
+    color: #fff;
+    font-family: "Gotham Narrow SSm 5r";
+    font-size: 12px;
+    line-height: 0.9;
+    margin: 0 0 20px;
+}
+#bt_invite_box .invite_box .sfa-button.transactional {
+    background-color: #aaa;
+    cursor: pointer;
+    text-shadow: none;
+}
+#bt_invite_box .invite_box .no-thanks {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 11px;
+    margin: 0 20px 0 0;
+    padding: 0;
+}
+#bc_email_form, #bc_email_form_tks {
+    color: #000;
+    font-size: 11px;
+    padding: 0 30px 30px;
+}
+#bc_email_form .form-head, #bc_email_form_tks .form-head {
+    border-bottom: 1px solid #d3d3d3;
+    margin: 0 0 20px;
+    padding: 0 0 10px;
+}
+#bc_email_form .form-head #saksLogo-emailForm, #bc_email_form_tks .form-head #saksLogo-emailForm {
+    background-image: url("/static/images/compass/icons-sb3ff358c2f.png");
+    background-position: 0 -303px;
+    background-repeat: no-repeat;
+    float: left;
+    height: 80px;
+    margin: 0 20px 0 0;
+    overflow: hidden;
+    width: 80px;
+}
+@media not all, only screen and (min--moz-device-pixel-ratio: 2), not all, not all, only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+#bc_email_form .form-head #saksLogo-emailForm, #bc_email_form_tks .form-head #saksLogo-emailForm {
+    background-image: url("/static/images/compass/icons2x-saf7fa95ea3.png");
+    background-position: 0 -125px;
+    background-size: 127px auto, auto auto;
+}
+}
+#bc_email_form .form-head #chat-title, #bc_email_form_tks .form-head #chat-title {
+    font-size: 30px;
+    padding: 30px 0 14px;
+}
+#bc_email_form .form-head #intro-message, #bc_email_form_tks .form-head #intro-message {
+    font-size: 11px;
+}
+#bc_email_form .error-message-box, #bc_email_form_tks .error-message-box {
+    display: none;
+    font-size: 12px;
+    font-weight: 400;
+}
+#bc_email_form .field, #bc_email_form_tks .field {
+    margin: 0 0 30px;
+}
+#bc_email_form .field label, #bc_email_form_tks .field label {
+    font-size: 11px;
+    margin: 0 0 8px;
+}
+#bc_email_form .field label .field-label, #bc_email_form_tks .field label .field-label {
+    display: inline-block;
+    font-size: 11px;
+    line-height: 1;
+}
+#bc_email_form .field input, #bc_email_form .field select, #bc_email_form_tks .field input, #bc_email_form_tks .field select {
+    min-height: 0;
+}
+#bc_email_form .field p, #bc_email_form_tks .field p {
+    font-size: 11px;
+    line-height: 1.5;
+    margin: 6px 0 0;
+}
+#bc_email_form .field #form-message, #bc_email_form_tks .field #form-message {
+    height: 60px;
+    width: 100%;
+}
+#bc_email_form .field .errorMsg, #bc_email_form_tks .field .errorMsg {
+    font-size: 11px;
+    margin: 0;
+}
+#bc_email_form .field.form-field-error, #bc_email_form_tks .field.form-field-error {
+    margin: 0 0 10px;
+}
+#bc_email_form .field.form-field-error textarea, #bc_email_form .field.form-field-error select, #bc_email_form_tks .field.form-field-error textarea, #bc_email_form_tks .field.form-field-error select {
+    border-color: #ee0c0c;
+}
+#bc_email_form .field.form-field-error .selectbox-helper:before, #bc_email_form_tks .field.form-field-error .selectbox-helper:before {
+    margin-top: -12px;
+}
+#bc_email_form .cancel_submit_wrapper, #bc_email_form_tks .cancel_submit_wrapper {
+    float: right;
+    font-size: 12px;
+    margin: -10px 0 0;
+    vertical-align: middle;
+}
+#bc_email_form .cancel_submit_wrapper .sfa-button, #bc_email_form_tks .cancel_submit_wrapper .sfa-button {
+    font-size: 15px;
+    margin-left: 20px;
+}
+#bc_email_form font[face="courier new"], #bc_email_form_tks font[face="courier new"] {
+    display: none;
+}
+#bc_email_form .thank-you-msg, #bc_email_form_tks .thank-you-msg {
+    font-size: 11px;
+    margin: 0 0 30px;
+}
+.is-hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+.promotion-details-title, #bc_email_form .form-head #chat-title, #bc_email_form_tks .form-head #chat-title, div.page-title, .promotion-banner-top-global .promotion-banners-title, .checkout-banner-short .promotion-banners-title, .browser-warning h3, .promotion-details-subtitle, #bc_email_form .cancel_submit_wrapper .sfa-button, #bc_email_form_tks .cancel_submit_wrapper .sfa-button, .browser-warning p, .promotion-banner-top-global .promotion-banners-detail, .checkout-banner-long .promotion-banners-detail, .checkout-banner-short .promotion-banners-detail, .promotion-banners, .promotion-details-tagline, .promotion-details-cutoff, .promotion-details-usage, .promotion-details-disclaimer p, .promotion-details-disclaimer td, #bc_email_form, #bc_email_form_tks, #bc_email_form .form-head #intro-message, #bc_email_form_tks .form-head #intro-message, #bc_email_form .field label, #bc_email_form_tks .field label, #bc_email_form .field p, #bc_email_form_tks .field p, #bc_email_form .thank-you-msg, #bc_email_form_tks .thank-you-msg, .promotion-banner-top-global .promotion-banners-detail span, .checkout-banner-long .promotion-banners-title, .checkout-banner-long .promotion-banners-detail span, .checkout-banner-short .promotion-banners-detail span, .promotion-banners b, .promotion-banners strong, .promotion-details-cutoff strong, .promotion-details-cutoff b, .promotion-details-usage strong, .promotion-details-usage b, .promotion-details-disclaimer h1, .promotion-details-disclaimer h2, .promotion-details-disclaimer h3, .promotion-details-disclaimer h4, .promotion-details-disclaimer h5, .promotion-details-disclaimer h6, .promotion-details-disclaimer strong, .promotion-details-disclaimer b, .promotion-details-disclaimer th, #bc_email_form .field label .field-label, #bc_email_form_tks .field label .field-label {
+    font-weight: 400;
+}
+.promotion-details-title, #bc_email_form .form-head #chat-title, #bc_email_form_tks .form-head #chat-title, div.page-title {
+    font-family: "Gotham 4r","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.promotion-banner-top-global .promotion-banners-title, .checkout-banner-short .promotion-banners-title {
+    font-family: "Gotham Narrow 7r","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.browser-warning h3, .promotion-details-subtitle {
+    font-family: "Gotham SSm 4r","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#bc_email_form .cancel_submit_wrapper .sfa-button, #bc_email_form_tks .cancel_submit_wrapper .sfa-button {
+    font-family: "Gotham SSm 5r","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.browser-warning p, .promotion-banner-top-global .promotion-banners-detail, .checkout-banner-long .promotion-banners-detail, .checkout-banner-short .promotion-banners-detail, .promotion-banners, .promotion-details-tagline, .promotion-details-cutoff, .promotion-details-usage, .promotion-details-disclaimer p, .promotion-details-disclaimer td, #bc_email_form, #bc_email_form_tks, #bc_email_form .form-head #intro-message, #bc_email_form_tks .form-head #intro-message, #bc_email_form .field label, #bc_email_form_tks .field label, #bc_email_form .field p, #bc_email_form_tks .field p, #bc_email_form .thank-you-msg, #bc_email_form_tks .thank-you-msg {
+    font-family: "Gotham Narrow SSm 5r","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.promotion-banner-top-global .promotion-banners-detail span, .checkout-banner-long .promotion-banners-title, .checkout-banner-long .promotion-banners-detail span, .checkout-banner-short .promotion-banners-detail span, .promotion-banners b, .promotion-banners strong, .promotion-details-cutoff strong, .promotion-details-cutoff b, .promotion-details-usage strong, .promotion-details-usage b, .promotion-details-disclaimer h1, .promotion-details-disclaimer h2, .promotion-details-disclaimer h3, .promotion-details-disclaimer h4, .promotion-details-disclaimer h5, .promotion-details-disclaimer h6, .promotion-details-disclaimer strong, .promotion-details-disclaimer b, .promotion-details-disclaimer th, #bc_email_form .field label .field-label, #bc_email_form_tks .field label .field-label {
+    font-family: "Gotham Narrow SSm 7r","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.sfa-nav-dots {
+    bottom: 20px;
+    left: 50%;
+    position: absolute;
+}
+.sfa-nav-dots-inner {
+    left: -50%;
+    position: relative;
+}
+.sfa-nav-dot {
+    background-image: url("/static/images/compass/icons-sb3ff358c2f.png");
+    background-position: 0 -1686px;
+    background-repeat: no-repeat;
+    float: left;
+    height: 8px;
+    margin: 0 10px;
+    width: 8px;
+}
+.sfa-nav-dot:hover {
+    background-position: 0 -1700px;
+}
+@media not all, only screen and (min--moz-device-pixel-ratio: 2), not all, not all, only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+.sfa-nav-dot {
+    background-image: url("/static/images/compass/icons2x-saf7fa95ea3.png");
+    background-position: 0 -1744.5px;
+    background-size: 127px auto, auto auto;
+}
+.sfa-nav-dot:hover {
+    background-position: 0 -1758.5px;
+}
+}
+.sfa-nav-dot.sfa-nav-dot-on {
+    background-image: url("/static/images/compass/icons-sb3ff358c2f.png");
+    background-position: 0 -1700px;
+    background-repeat: no-repeat;
+    height: 8px;
+    width: 8px;
+}
+@media not all, only screen and (min--moz-device-pixel-ratio: 2), not all, not all, only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+.sfa-nav-dot.sfa-nav-dot-on {
+    background-image: url("/static/images/compass/icons2x-saf7fa95ea3.png");
+    background-position: 0 -1758.5px;
+    background-size: 127px auto, auto auto;
+}
+}
+div.page-title {
+    border-bottom: 2px solid #000;
+    color: #000;
+    font-size: 28px;
+    height: 21px;
+    line-height: 21px;
+    margin: 0 0 10px;
+    padding: 0 0 11px;
+    width: 100%;
+}
+#sfa-turnto-qa-module h2 {
+    font-weight: 400;
+}
+#sfa-turnto-qa-module h2 {
+    font-family: "Gotham 4r","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#sfa-turnto-qa-module h2 {
+    font-weight: 400;
+}
+#sfa-turnto-qa-module h2 {
+    font-family: "Gotham 4r","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#sfa-turnto-qa-module h2 {
+    font-weight: 400;
+}
+#sfa-turnto-qa-module h2 {
+    font-family: "Gotham 4r","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#productDetail, [data-pagealias="product-detail-page"] {
+}
+#productDetail #TurnToContent a, #productDetail #TTtraWindow a, #productDetail #ttMobileContainer a, [data-pagealias="product-detail-page"] #TurnToContent a, [data-pagealias="product-detail-page"] #TTtraWindow a, [data-pagealias="product-detail-page"] #ttMobileContainer a {
+    color: #000 !important;
+}
+#productDetail .TTdialog select, #productDetail .TTdialog input[type="text"], #productDetail .TTdialog textarea, [data-pagealias="product-detail-page"] .TTdialog select, [data-pagealias="product-detail-page"] .TTdialog input[type="text"], [data-pagealias="product-detail-page"] .TTdialog textarea {
+    background-color: #fcfcfc !important;
+    border: 1px solid #ccc !important;
+    font-size: 11px !important;
+    margin-bottom: 2px !important;
+}
+#productDetail .TT3answersBlock .TTdefaultInput, [data-pagealias="product-detail-page"] .TT3answersBlock .TTdefaultInput {
+    color: #a7a9ac !important;
+    font-family: Helvetica,sans-serif !important;
+    font-size: 13px !important;
+    height: 30px !important;
+}
+#productDetail .TTdefaultInput, [data-pagealias="product-detail-page"] .TTdefaultInput {
+    font-family: Helvetica,sans-serif !important;
+}
+#productDetail #TTregForm input[type="text"], [data-pagealias="product-detail-page"] #TTregForm input[type="text"] {
+    height: 20px !important;
+    width: 300px !important;
+}
+#productDetail #TTregForm #TTlastName, [data-pagealias="product-detail-page"] #TTregForm #TTlastName {
+    display: block !important;
+    margin-top: 10px;
+}
+#productDetail #TT2myNetworkSection, [data-pagealias="product-detail-page"] #TT2myNetworkSection {
+    margin: 3px 0 !important;
+}
+#productDetail #TT2pastPurchasesDisplay td, [data-pagealias="product-detail-page"] #TT2pastPurchasesDisplay td {
+    padding: 8px !important;
+}
+#productDetail #TT2pastPurchasesDisplay td.TT2ppImage, [data-pagealias="product-detail-page"] #TT2pastPurchasesDisplay td.TT2ppImage {
+    padding: 8px 8px 8px 0 !important;
+}
+#productDetail #TT2pastPurchasesDisplay textarea, [data-pagealias="product-detail-page"] #TT2pastPurchasesDisplay textarea {
+    margin-top: 10px !important;
+}
+#productDetail #TT2pastPurchasesDisplay .TT2ppImage img, [data-pagealias="product-detail-page"] #TT2pastPurchasesDisplay .TT2ppImage img {
+    border: 1px solid #e6e7e8 !important;
+    height: 120px !important;
+}
+#productDetail #TT2pastPurchasesDisplay .TT2ppSaveCommentButton, [data-pagealias="product-detail-page"] #TT2pastPurchasesDisplay .TT2ppSaveCommentButton {
+    background-color: #000 !important;
+}
+#productDetail #TT2pastPurchasesDisplay .TT2commentArea, [data-pagealias="product-detail-page"] #TT2pastPurchasesDisplay .TT2commentArea {
+    background-color: #f4f4f4 !important;
+}
+#productDetail .TT2topbarLI, [data-pagealias="product-detail-page"] .TT2topbarLI {
+    font-size: 11px !important;
+}
+#productDetail #TT2userSetting .prop .nameRF, [data-pagealias="product-detail-page"] #TT2userSetting .prop .nameRF {
+    text-align: left !important;
+    white-space: nowrap !important;
+    width: 112px !important;
+}
+#productDetail #TT2userSetting .prop .valueL, [data-pagealias="product-detail-page"] #TT2userSetting .prop .valueL {
+    text-align: left !important;
+    width: auto !important;
+}
+#productDetail #TT2userSetting, [data-pagealias="product-detail-page"] #TT2userSetting {
+    border: 0 none !important;
+}
+#productDetail #TT2userSetting td, #productDetail #TT2userSetting th, [data-pagealias="product-detail-page"] #TT2userSetting td, [data-pagealias="product-detail-page"] #TT2userSetting th {
+    font-size: 12px !important;
+}
+#productDetail #TT2userSetting a:link, #productDetail #TT2userSetting a:visited, [data-pagealias="product-detail-page"] #TT2userSetting a:link, [data-pagealias="product-detail-page"] #TT2userSetting a:visited {
+    font-size: 11px !important;
+    text-decoration: none !important;
+}
+#productDetail #photoEditor td, #productDetail #photoEditor th, [data-pagealias="product-detail-page"] #photoEditor td, [data-pagealias="product-detail-page"] #photoEditor th {
+    font-size: 12px !important;
+    padding: 5px 6px !important;
+    text-align: left !important;
+    vertical-align: top !important;
+}
+#productDetail a#TT2seeMorePurchases, [data-pagealias="product-detail-page"] a#TT2seeMorePurchases {
+    float: left !important;
+    font-size: 12px !important;
+}
+#productDetail #TT2questionSection, [data-pagealias="product-detail-page"] #TT2questionSection {
+    color: #000 !important;
+    margin-top: 16px !important;
+    padding: 0 0 4px !important;
+}
+#productDetail #TT2questionReg #TTregForm input[type="text"], [data-pagealias="product-detail-page"] #TT2questionReg #TTregForm input[type="text"] {
+    height: 20px !important;
+    width: 200px !important;
+}
+#productDetail #TT2askDelAuthLink1, [data-pagealias="product-detail-page"] #TT2askDelAuthLink1 {
+    background: url("/static/images/turnto/tra-sprites.png") no-repeat scroll -110px -420px rgba(0, 0, 0, 0) !important;
+    display: block !important;
+    height: 32px !important;
+    margin: 0 !important;
+    text-indent: -600px !important;
+    width: 32px !important;
+}
+#productDetail #TT2askDelAuthLink2, [data-pagealias="product-detail-page"] #TT2askDelAuthLink2 {
+    background: url("/static/images/turnto/tra-sprites.png") no-repeat scroll -110px -502px rgba(0, 0, 0, 0) !important;
+    display: block !important;
+    height: 32px !important;
+    margin: 0 !important;
+    text-indent: -600px !important;
+    width: 32px !important;
+}
+#productDetail #TT2askDelAuthLink3, [data-pagealias="product-detail-page"] #TT2askDelAuthLink3 {
+    background: url("/static/images/turnto/tra-sprites.png") no-repeat scroll -110px -584px rgba(0, 0, 0, 0) !important;
+    display: block !important;
+    height: 32px !important;
+    margin: 0 !important;
+    text-indent: -600px !important;
+    width: 32px !important;
+}
+#productDetail #TT2askDelAuthLink4, [data-pagealias="product-detail-page"] #TT2askDelAuthLink4 {
+    background: url("/static/images/turnto/tra-sprites.png") no-repeat scroll -110px -666px rgba(0, 0, 0, 0) !important;
+    display: block !important;
+    height: 32px !important;
+    margin: 0 !important;
+    text-indent: -600px !important;
+    width: 32px !important;
+}
+#productDetail .TT3itemBox2, [data-pagealias="product-detail-page"] .TT3itemBox2 {
+    margin-left: 39px !important;
+    padding-bottom: 6px !important;
+    padding-left: 20px !important;
+}
+#productDetail .TT3itemBox .TT3linkLine, #productDetail #TTtraWindow .TT3itemBox .TT3linkLine, [data-pagealias="product-detail-page"] .TT3itemBox .TT3linkLine, [data-pagealias="product-detail-page"] #TTtraWindow .TT3itemBox .TT3linkLine {
+    text-indent: -900px !important;
+}
+#productDetail .TT3linkLine, #productDetail #TTtraWindow .TT3linkLine, [data-pagealias="product-detail-page"] .TT3linkLine, [data-pagealias="product-detail-page"] #TTtraWindow .TT3linkLine {
+    color: #808285 !important;
+    font-size: 11px !important;
+    margin-top: 10px !important;
+}
+#productDetail #TurnToContent .TT3linkLine a, #productDetail #TTtraWindow .TT3linkLine a, [data-pagealias="product-detail-page"] #TurnToContent .TT3linkLine a, [data-pagealias="product-detail-page"] #TTtraWindow .TT3linkLine a {
+    color: #808285 !important;
+    text-decoration: underline !important;
+}
+#productDetail .TT6, [data-pagealias="product-detail-page"] .TT6 {
+    display: none !important;
+}
+#productDetail .TT7, [data-pagealias="product-detail-page"] .TT7 {
+    display: inline !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+    word-wrap: break-word !important;
+}
+#productDetail .TT8, [data-pagealias="product-detail-page"] .TT8 {
+    clear: both !important;
+    padding: 0 0 14px !important;
+}
+#productDetail #TurnToContent, #productDetail #TTtraWindow, #productDetail #ttMobileContainer, #productDetail #TT2userSetting, [data-pagealias="product-detail-page"] #TurnToContent, [data-pagealias="product-detail-page"] #TTtraWindow, [data-pagealias="product-detail-page"] #ttMobileContainer, [data-pagealias="product-detail-page"] #TT2userSetting {
+    color: #58595b !important;
+    font-family: Helvetica,sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+}
+#productDetail .TT3commentCntr, [data-pagealias="product-detail-page"] .TT3commentCntr {
+    background-color: #f4f4f4 !important;
+    margin: 0 0 0 32px !important;
+    padding: 5px 5px 5px 0 !important;
+}
+#productDetail .TT3tmbOn, [data-pagealias="product-detail-page"] .TT3tmbOn {
+    font-weight: 400 !important;
+}
+#productDetail #TurnToContent .TT3commentCntr:hover a, #productDetail #TurnToContent .TT3expand:hover a, #productDetail #TurnToContent .TT3questCntr:hover .TT3linkLine a, #productDetail #TurnToContent .TT3ansArea:hover .TT3linkLine a, #productDetail #TTtraWindow .TT3commentCntr:hover a, #productDetail #TTtraWindow .TT3expand:hover a, #productDetail #TTtraWindow .TT3questCntr:hover .TT3linkLine a, #productDetail #TTtraWindow .TT3ansArea:hover .TT3linkLine a, [data-pagealias="product-detail-page"] #TurnToContent .TT3commentCntr:hover a, [data-pagealias="product-detail-page"] #TurnToContent .TT3expand:hover a, [data-pagealias="product-detail-page"] #TurnToContent .TT3questCntr:hover .TT3linkLine a, [data-pagealias="product-detail-page"] #TurnToContent .TT3ansArea:hover .TT3linkLine a, [data-pagealias="product-detail-page"] #TTtraWindow .TT3commentCntr:hover a, [data-pagealias="product-detail-page"] #TTtraWindow .TT3expand:hover a, [data-pagealias="product-detail-page"] #TTtraWindow .TT3questCntr:hover .TT3linkLine a, [data-pagealias="product-detail-page"] #TTtraWindow .TT3ansArea:hover .TT3linkLine a {
+    color: #000 !important;
+    font-weight: 400 !important;
+}
+#productDetail .TT3expand a, [data-pagealias="product-detail-page"] .TT3expand a {
+    text-decoration: underline !important;
+}
+#productDetail .TT3expandImg, [data-pagealias="product-detail-page"] .TT3expandImg {
+    background-image: url("/static/images/turnto/carrot_down.png") !important;
+    display: inline-block !important;
+}
+#productDetail .TT3collapseImg, [data-pagealias="product-detail-page"] .TT3collapseImg {
+    display: none;
+}
+#productDetail #TTtraWindow .TT3expand:hover .TT3expandImg, #productDetail #TurnToContent .TT3expand:hover .TT3expandImg, [data-pagealias="product-detail-page"] #TTtraWindow .TT3expand:hover .TT3expandImg, [data-pagealias="product-detail-page"] #TurnToContent .TT3expand:hover .TT3expandImg {
+    display: none !important;
+}
+#productDetail #TTtraWindow .TT3expand:hover .TT3collapseImg, #productDetail #TurnToContent .TT3expand:hover .TT3collapseImg, [data-pagealias="product-detail-page"] #TTtraWindow .TT3expand:hover .TT3collapseImg, [data-pagealias="product-detail-page"] #TurnToContent .TT3expand:hover .TT3collapseImg {
+    display: none !important;
+}
+#productDetail .TT3ShowMore, #productDetail #TTtraWindow .TT3ShowMore, [data-pagealias="product-detail-page"] .TT3ShowMore, [data-pagealias="product-detail-page"] #TTtraWindow .TT3ShowMore {
+    border-bottom: 1px solid #e6e7e8 !important;
+    border-top: 1px solid #e6e7e8 !important;
+    display: none !important;
+    font-size: 14px !important;
+    margin: 5px 0 10px !important;
+    padding: 15px !important;
+    text-align: left !important;
+}
+#productDetail #TurnToContent a img.TT4showMoreImg, #productDetail #TTtraWindow a img.TT4showMoreImg, #productDetail #ttMobileContainer a img.TT4showMoreImg, [data-pagealias="product-detail-page"] #TurnToContent a img.TT4showMoreImg, [data-pagealias="product-detail-page"] #TTtraWindow a img.TT4showMoreImg, [data-pagealias="product-detail-page"] #ttMobileContainer a img.TT4showMoreImg {
+    background-image: url("/static/images/turnto/tra-sprites.png") !important;
+    background-repeat: no-repeat !important;
+    display: inline-block !important;
+}
+#productDetail .TT3cAnchorLeft, [data-pagealias="product-detail-page"] .TT3cAnchorLeft {
+    display: none !important;
+}
+#productDetail .TT3qAnchorLeft, [data-pagealias="product-detail-page"] .TT3qAnchorLeft {
+    display: none !important;
+}
+#productDetail .TT3aAnchorLeft, [data-pagealias="product-detail-page"] .TT3aAnchorLeft {
+    display: none !important;
+}
+#productDetail .TT3tAnchorLeft, [data-pagealias="product-detail-page"] .TT3tAnchorLeft {
+    background-image: url("/static/images/turnto/tra-sprites.png") !important;
+    background-repeat: no-repeat !important;
+    display: inline-block !important;
+    float: left !important;
+    margin-right: 7px !important;
+}
+#productDetail #TT2askRewardMsg, [data-pagealias="product-detail-page"] #TT2askRewardMsg {
+    margin: 0 !important;
+}
+#productDetail .TT3fixedWidth, [data-pagealias="product-detail-page"] .TT3fixedWidth {
+    float: left !important;
+    font-weight: 700 !important;
+    line-height: 14px !important;
+    width: 23px !important;
+}
+#productDetail #TT3searchBox, [data-pagealias="product-detail-page"] #TT3searchBox {
+    background-color: #fff !important;
+    border: 1px solid #000 !important;
+    margin-top: -4px !important;
+    width: 270px !important;
+}
+#productDetail #ttMobileContainer #TT3searchBtn, [data-pagealias="product-detail-page"] #ttMobileContainer #TT3searchBtn {
+    float: none !important;
+}
+#productDetail #TurnToContent .TT3miqaQuestionItem img, #productDetail #TTtraWindow .TT3miqaQuestionItem img, [data-pagealias="product-detail-page"] #TurnToContent .TT3miqaQuestionItem img, [data-pagealias="product-detail-page"] #TTtraWindow .TT3miqaQuestionItem img {
+    border: 1px solid #e6e7e8 !important;
+    width: 100% !important;
+}
+#productDetail #TurnToContent .TTsmallBtn, #productDetail #TTtraWindow .TTsmallBtn, #productDetail #ttMobileContainer .TTsmallBtn, [data-pagealias="product-detail-page"] #TurnToContent .TTsmallBtn, [data-pagealias="product-detail-page"] #TTtraWindow .TTsmallBtn, [data-pagealias="product-detail-page"] #ttMobileContainer .TTsmallBtn {
+    border: 0 none !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    font-size: 12px !important;
+    padding: 3px 10px !important;
+}
+#productDetail #TurnToContent .TTsmallBtn:hover, #productDetail #TTtraWindow .TTsmallBtn:hover, #productDetail #ttMobileContainer .TTsmallBtn:hover, [data-pagealias="product-detail-page"] #TurnToContent .TTsmallBtn:hover, [data-pagealias="product-detail-page"] #TTtraWindow .TTsmallBtn:hover, [data-pagealias="product-detail-page"] #ttMobileContainer .TTsmallBtn:hover {
+    background-color: #5f95cb !important;
+    text-decoration: none !important;
+}
+#productDetail #TurnToContent .TTbigBtn, #productDetail #TTtraWindow .TTbigBtn, #productDetail #ttMobileContainer .TTbigBtn, [data-pagealias="product-detail-page"] #TurnToContent .TTbigBtn, [data-pagealias="product-detail-page"] #TTtraWindow .TTbigBtn, [data-pagealias="product-detail-page"] #ttMobileContainer .TTbigBtn {
+    border: 0 none !important;
+    border-radius: 4px !important;
+    color: #fff !important;
+    cursor: pointer !important;
+    font-size: 14px !important;
+    padding: 6px 25px !important;
+}
+#productDetail #TurnToContent .TTbigBtn:hover, #productDetail #TTtraWindow .TTbigBtn:hover, #productDetail #ttMobileContainer .TTbigBtn:hover, [data-pagealias="product-detail-page"] #TurnToContent .TTbigBtn:hover, [data-pagealias="product-detail-page"] #TTtraWindow .TTbigBtn:hover, [data-pagealias="product-detail-page"] #ttMobileContainer .TTbigBtn:hover {
+    text-decoration: none !important;
+}
+#productDetail #TT3searchBtn, [data-pagealias="product-detail-page"] #TT3searchBtn {
+    background: url("/static/images/turnto/search.png") no-repeat scroll center center rgba(0, 0, 0, 0) !important;
+    height: 20px !important;
+    margin-left: 10px !important;
+    width: 75px !important;
+}
+#productDetail #TT3clearSearch, [data-pagealias="product-detail-page"] #TT3clearSearch {
+    padding-right: 5px !important;
+    visibility: hidden !important;
+}
+#productDetail #TT3relatedQuestionsWrp, [data-pagealias="product-detail-page"] #TT3relatedQuestionsWrp {
+    margin-top: 40px !important;
+}
+#productDetail .TT3expertBadge, [data-pagealias="product-detail-page"] .TT3expertBadge {
+    background-color: #000 !important;
+    color: #fff !important;
+    font-size: 10px !important;
+    font-weight: 400 !important;
+    margin: 0 4px !important;
+    padding: 2px 6px !important;
+}
+#productDetail .TT4controlLine, [data-pagealias="product-detail-page"] .TT4controlLine {
+    color: #808285 !important;
+    font-size: 11px !important;
+    margin-top: 15px !important;
+}
+#productDetail #TT3IAContainer-SYSGEN .TT3askedBy, [data-pagealias="product-detail-page"] #TT3IAContainer-SYSGEN .TT3askedBy {
+    color: #808285 !important;
+    font-size: 11px !important;
+}
+#productDetail .TT3c100, [data-pagealias="product-detail-page"] .TT3c100 {
+    margin-top: 3px !important;
+    padding: 15px !important;
+}
+#productDetail .TT3c101, [data-pagealias="product-detail-page"] .TT3c101 {
+    margin-top: 3px !important;
+    padding: 15px !important;
+}
+#productDetail #TT3SearchTermMiqa, [data-pagealias="product-detail-page"] #TT3SearchTermMiqa {
+    border: medium none !important;
+    outline: medium none transparent !important;
+    padding-top: 3px !important;
+    vertical-align: top !important;
+    width: 250px !important;
+}
+#productDetail #ttMobileContainer #TT3searchTermMiqa, [data-pagealias="product-detail-page"] #ttMobileContainer #TT3searchTermMiqa {
+    width: 150px !important;
+}
+#productDetail #TT3miqaRslts .TT3transparent, [data-pagealias="product-detail-page"] #TT3miqaRslts .TT3transparent {
+    background-color: #fff !important;
+    height: 100% !important;
+    opacity: 0.5 !important;
+    padding-top: 32% !important;
+    position: absolute !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    width: 100% !important;
+}
+#productDetail #TT3miqaRslts .TT3addedText, [data-pagealias="product-detail-page"] #TT3miqaRslts .TT3addedText {
+    background-image: url("/static/images/turnto/tra-sprites.png") !important;
+    height: 28px !important;
+    margin: 23% 0 0 40% !important;
+    position: absolute !important;
+    text-align: center !important;
+    width: 28px !important;
+    z-index: 2 !important;
+}
+#productDetail #TT3miqaRslts .TT3add, [data-pagealias="product-detail-page"] #TT3miqaRslts .TT3add {
+    background-color: #fff !important;
+    margin: 32% !important;
+    opacity: 0.9 !important;
+    position: absolute !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    width: 45px !important;
+}
+#productDetail #TT3SelectItemsMiqa, [data-pagealias="product-detail-page"] #TT3SelectItemsMiqa {
+    margin-left: 125px !important;
+}
+#productDetail .TT3miqaSection, [data-pagealias="product-detail-page"] .TT3miqaSection {
+    height: 147px !important;
+    margin: 20px 0 0 !important;
+    overflow: hidden !important;
+    position: relative !important;
+    right: 0 !important;
+    width: 100% !important;
+}
+#productDetail #ttMobileContainer .TT3miqaSection, [data-pagealias="product-detail-page"] #ttMobileContainer .TT3miqaSection {
+    margin: 20px 0 0 3.5% !important;
+}
+#productDetail #ttMobileContainer .TT3scrollL, [data-pagealias="product-detail-page"] #ttMobileContainer .TT3scrollL {
+    left: 0 !important;
+}
+#productDetail #TT3miqaRsltsCnt, [data-pagealias="product-detail-page"] #TT3miqaRsltsCnt {
+    color: #555 !important;
+    font-size: 10px !important;
+    margin-left: 5px !important;
+    padding-top: 5px !important;
+}
+#productDetail .TT3scrollR, [data-pagealias="product-detail-page"] .TT3scrollR {
+    background-color: #e6e7e8 !important;
+    cursor: pointer !important;
+    height: 111px !important;
+    opacity: 0.66 !important;
+    position: absolute !important;
+    right: 3px !important;
+    top: 38px !important;
+    z-index: 2 !important;
+}
+#productDetail .TT3scrollL, [data-pagealias="product-detail-page"] .TT3scrollL {
+    background-color: #e6e7e8 !important;
+    cursor: pointer !important;
+    height: 111px !important;
+    left: 0 !important;
+    opacity: 0.66 !important;
+    position: absolute !important;
+    top: 38px !important;
+    z-index: 2 !important;
+}
+#productDetail .TT3ansArea .TT3scrollR, [data-pagealias="product-detail-page"] .TT3ansArea .TT3scrollR {
+    height: 101px !important;
+    top: 37px !important;
+    width: 12px !important;
+}
+#productDetail .TT3ansArea .TT3scrollL, [data-pagealias="product-detail-page"] .TT3ansArea .TT3scrollL {
+    height: 101px !important;
+    top: 37px !important;
+    width: 12px !important;
+}
+#productDetail .TT3miqaQuestionItem, [data-pagealias="product-detail-page"] .TT3miqaQuestionItem {
+    background-color: #fff !important;
+    cursor: pointer !important;
+    float: left !important;
+    height: 140px !important;
+    margin: 0 0 10px 3.6% !important;
+    position: relative !important;
+    text-align: center !important;
+    width: 17% !important;
+}
+#productDetail .TT3miqaAttachedAnsItem, [data-pagealias="product-detail-page"] .TT3miqaAttachedAnsItem {
+    border: 1px solid #e6e7e8 !important;
+    cursor: pointer !important;
+    float: left !important;
+    height: 110px !important;
+    margin: 4px 0 10px 3.6% !important;
+    position: relative !important;
+    text-align: center !important;
+    width: 16% !important;
+}
+#productDetail .TT3miqaAttachedAnsItem:first-child, [data-pagealias="product-detail-page"] .TT3miqaAttachedAnsItem:first-child {
+    margin: 4px 0 10px !important;
+}
+#productDetail .TT3miqaAnsAttachedAImg, [data-pagealias="product-detail-page"] .TT3miqaAnsAttachedAImg {
+    width: 100% !important;
+}
+#productDetail .TT3ansArea .TT3miqaQuestionItem, [data-pagealias="product-detail-page"] .TT3ansArea .TT3miqaQuestionItem {
+    background-color: transparent !important;
+}
+#productDetail .TT3miqaQuestionItem:first-child, [data-pagealias="product-detail-page"] .TT3miqaQuestionItem:first-child {
+    margin-left: 0 !important;
+}
+#productDetail #ttMobileContainer .TT3miqaQuestionItem, [data-pagealias="product-detail-page"] #ttMobileContainer .TT3miqaQuestionItem {
+    width: 21% !important;
+}
+#productDetail .TT3carouselLeft, [data-pagealias="product-detail-page"] .TT3carouselLeft {
+    background-image: url("/static/images/turnto/tra-sprites.png") !important;
+    background-position: 0 -653px !important;
+    background-repeat: no-repeat !important;
+    display: inline-block !important;
+    height: 12px !important;
+    margin-top: 48px !important;
+    width: 12px !important;
+}

@@ -1,0 +1,180 @@
+{% extends 'base.html' %}
+
+{% block title %}Shopping Bag{% endblock title %}
+
+{% block content %}
+	<div class="shopping-bag-con">
+          	 <h2>BAG</h2>
+              
+              <div class="bag-table desktop-table">
+              	<table>
+                	<thead>
+                    	<tr>
+                        	<td align="left">Items (1)</td>
+                            <td align="left"> Quantity </td>
+                            <td align="center">Status</td>
+                            <td align="center">Unit Price</td>
+                            <td align="right">Subtotal</td>    
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                    	<tr>
+                        	<td valign="top">
+                            	<div class="tiems">
+                           	    <img src="{{ STATIC_URL }}images/items-img.jpg" alt="Items"> 
+                                	<p><i>Acne Studios</i> <br>Gala Asmmetrical Ribbed<br>Wool Sweaterdress<br>0478524846783<br><i>Size: SML <br>Color: BLACK</i> </p>
+                                </div>
+                          </td>
+                            <td valign="top">
+                            
+                            	<input name="" type="text">
+                                <ul>
+                                	<li class="edit"><a href="#">Edit</a></li>
+                                	<li class="like"><a href="#">Save for Later</a></li>
+                                	<li class="remove"><a href="#">Remove</a></li>
+                                </ul>
+                            </td>
+                            <td valign="top" align="center"><span>In Stock</span> </td>
+                             <td valign="top" align="center"><span>$1050.00</span> </td>
+                             <td valign="top" align="right" class="subtotal"><span>$1050.00</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+              </div>
+              
+              <div class="bag-table mobile-table">
+              	<table>
+                
+                	<thead>
+                    	<tr>
+                        	<td align="left">Items (1)</td>
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                    	<tr>
+                        	<td valign="top">
+                            	<div class="tiems">
+                           	    <img src="{{ STATIC_URL }}images/items-img.jpg" alt="Items"> 
+                                <p><i>Acne Studios</i> <br>Gala Asmmetrical Ribbed<br>Wool Sweaterdress<br>0478524846783<br><i>Size: SML <br>Color: BLACK</i> </p>
+                                </div>
+                          </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                	<thead>
+                    	<tr>
+                        	<td align="left"> Quantity </td>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                    	<tr>
+                        	
+                            <td valign="top" align="left">
+                            
+                            	<input name="" type="text">
+                                <ul>
+                                	<li class="edit"><a href="#">Edit</a></li>
+                                	<li class="like"><a href="#">Save for Later</a></li>
+                                	<li class="remove"><a href="#">Remove</a></li>
+                                </ul>
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                	<thead>
+                    	<tr>
+                          <td align="left">Status</td>
+                         </tr>
+                    </thead>
+                    
+                    <tbody>
+                    	<tr>
+                        
+                            <td valign="top" align="left"><span>In Stock</span> </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                	<thead>
+                    	<tr>
+                           <td align="left">Unit Price</td>
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                    	<tr>
+                     
+                             <td valign="top" align="left"><span>$1050.00</span> </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                	<thead>
+                    	<tr>
+                            <td align="left">Subtotal</td>    
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                    	<tr>
+                           <td valign="top" align="left" class="subtotal"><span>$1050.00</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+              </div>
+              
+              <div class="promo-area">
+              
+              	<div class="promo-con">
+                  <h2>Promo Code(s)</h2>
+                   <label><a href="#"><img src="{{ STATIC_URL }}images/what-icon.png" alt="Faq"></a>Enter One Promo Code At A Time</label>	
+                   <div class="clearfix"></div>
+                   <input name="" type="text"><a href="#" class="apply">Apply</a>
+                </div>
+                
+                <div class="checkoutright">
+                	<table>
+                    	<tr>
+                        	<td><strong>Item Total:</strong></td>
+                            <td>$1050.00</td>
+                            
+                        </tr>
+                        <tr>
+                        	<td><strong>Estimated Shipping & Handling</strong></td>
+                            <td>$1070.00</td>
+                            
+                        </tr>
+                       <tr>
+                        	<td><strong>Estimated tax:</strong></td>
+                            <td>$0.00</td>
+                            
+                        </tr>
+                        <tr>
+                        	<td colspan="2"><div class="boder">&nbsp;</div></td>
+                        </tr>
+                        <tr>
+                        	<td><strong>Total</strong></td>
+                            <td>$1070.00</td>
+                            
+                        </tr>
+                        <tr>
+                        	<td colspan="2"><a href="#">Checkout</a></td>
+                        </tr>
+                    </table>
+                </div>
+                                
+              </div>
+             
+    </div>
+{% endblock content %}

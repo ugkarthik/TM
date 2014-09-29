@@ -1,0 +1,1 @@
+var sakscsatargetElement = document.getElementById('sakscsaScriptElement');if(sakscsatargetElement)sakscsatargetElement.responseReceived = true;

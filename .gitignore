@@ -1,0 +1,6 @@
+*.pyc
+
+# Local settings
+trendzmania/trendzmania/local_settings.py
+.pydevproject
+.project

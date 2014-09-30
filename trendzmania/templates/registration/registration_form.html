@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Register for an account" %}{% endblock %}
+
+{% block content %}
+<form method="post" action="{% url "registration_register" %}">
+    {% csrf_token %}
+    <div class="content-area">
+      <div class="container">
+          <div class="newaccount-con">
+          	 <h2>YOUR PERSONAL DETAILS  <span>*Required Information</span></h2>
+             
+             <div class="form-area">
+             	<h3>YOUR PERSONAL DETAILS</h3>
+                <table>
+                	<tr>
+                    	<td><label>First Name</label></td>
+                        <td><label class="red">*</label></td>
+                        <td>{{form.first_name}}</td>
+                        <td>{{form.first_name.errors}}</td>
+                    </tr>
+                    
+                    <tr>
+                    	<td><label>Last Name</label></td>
+                        <td><label class="red">*</label></td>
+                        <td>{{form.last_name}}</td>
+                        <td>{{form.last_name.errors}}</td>
+                    </tr>
+                    
+                    <tr>
+                    	<td><label>E-Mail</label></td>
+                        <td><label class="red">*</label></td>
+                        <td>{{form.email}}</td>
+                        <td>{{form.email.errors}}</td>
+                    </tr>
+                    
+                    <tr>
+                    	<td><label>Telephone</label></td>
+                        <td><label class="red">*</label></td>
+                        <td>{{form.phone}}</td>
+                        <td>{{form.phone.errors}}</td>
+                    </tr>
+ 
+                </table>
+             </div>
+             
+             <div class="form-area">
+             	<h3>Your Address</h3>
+                <table>
+                	<tr>
+                    	<td><label>Address 1</label></td>
+                        <td><label class="red">*</label></td>
+                        <td>{{form.address1}}</td>
+                        <td>{{form.address1.errors}}</td>
+                    </tr>
+                    
+                    <tr>
+                    	<td><label>Address 2</label></td>
+                        <td><label class="red">*</label></td>
+                        <td>{{form.address2}}</td>
+                        <td>{{form.address2.errors}}</td>
+                    </tr>
+                    
+                    <tr>
+                    	<td><label>City</label></td>
+                        <td><label class="red">*</label></td>
+                        <td>{{form.city}}</td>
+                        <td>{{form.city.errors}}</td>
+                    </tr>
+                    
+                    <tr>
+                    	<td><label>Post Code</label></td>
+                        <td><label class="red">*</label></td>
+                        <td>{{form.zipcode}}</td>
+                        <td>{{form.zipcode.errors}}</td>
+                    </tr>
+                    
+                    <tr>
+                    	<td><label>Country</label></td>
+                        <td><label class="red">*</label></td>
+                        <td>{{form.country}}</td>
+                        <td>{{form.country.errors}}</td>
+                    </tr>
+                    
+                    
+                    <tr>
+                    	<td><label>Region/Stage</label></td>
+                        <td><label class="red">*</label></td>
+                        <td>{{form.state}}</td>
+                        <td>{{form.state.errors}}</td>
+                    </tr>
+
+
+
+
+
+ 
+                </table>
+             </div>
+             
+             <div class="form-area">
+             	<h3>Your password</h3>
+                <table>
+                	<tr>
+                    	<td><label>Password</label></td>
+                        <td><label class="red">*</label></td>
+                        <td>{{form.password1}}</td>
+                        <td>{{form.password1.errors}}</td>
+                    </tr>
+                    
+                    <tr>
+                    	<td><label>Confirm Password </label></td>
+                        <td><label class="red">*</label></td>
+                        <td>{{form.password2}}</td>
+                        <td>{{form.password2.errors}}</td>
+                    </tr>
+                    
+                </table>
+             </div>
+             
+             <label class="aggree"><input name="" type="checkbox" value=""> I Have read and agree to the Privacy Policy</label>
+             
+             <ul>
+             	<li><a href="#">Cancel</a></li>
+                <!--<li><a href="#" class="save">Save</a></li>-->
+                <input type="submit" class="save" value="{% trans 'Save' %}" />
+             </ul>
+             
+          </div> 
+      </div>
+  </div>
+   
+</form>
+{% endblock %}
+
+
+{% comment %}
+**registration/registration_form.html**
+Used to show the form users will fill out to register. By default, has
+the following context:
+
+``form``
+    The registration form. This will be an instance of some subclass
+    of ``django.forms.Form``; consult `Django's forms documentation
+    <http://docs.djangoproject.com/en/dev/topics/forms/>`_ for
+    information on how to display this in a template.
+{% endcomment %}

@@ -13,7 +13,9 @@
          	<div class="signinLeft signin-con">
             	<h2>Sign-in to your account</h2>
                 <span>You habe previously created an account at Saks.com</span>
-                
+                {% if form.errors %}
+                <span style="color:red;margin-left: 149px;">{{form.error_messages.invalid_login}}</span>
+               {% endif %}
                 <h4>*Required <i>Information</i></h4>
                 <table>
                 <tr>
@@ -23,7 +25,7 @@
                 <tr>
                  <td><label class="red">*</label></td>
                 <td>{{form.username}}</td>
-                <td>{{form.username.errors}}</td>
+                <td style="color:red;">{{form.username.errors}}</td>
                 </tr>
                 
                 <tr>
@@ -33,14 +35,14 @@
                 <tr>
                 <td><label class="red">*</label></td>
                 <td>{{form.password}}</td>
-                <td>{{form.password.errors}}</td>
+                <td style="color:red;">{{form.password.errors}}</td>
                 </tr>
                  </table>
                 
                 <a href="#">Forgot Password?</a>
                 
                <!-- <a href="#" class="signin">Sign In</a>-->
-                <input type="submit" class="signin" value="{% trans 'Log in' %}" />
+                <input type="submit" class="signin" value="{% trans 'Sign In' %}" style="background: none repeat scroll 0 0 #000;clear: both;color: #fff;display: block;float: right;font-family: Arial,Helvetica,sans-serif;font-size: 12px;margin: 17px 0 0;padding: 6px 12px;text-transform: uppercase;text-decoration:none;"/>
             </div>
             <div class="signinright signin-con">
             	<h2>Create An account</h2>

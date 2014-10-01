@@ -4,7 +4,7 @@
 {% block title %}{% trans "Register for an account" %}{% endblock %}
 
 {% block content %}
-<form method="post" action="{% url "registration_register" %}">
+<form method="post" action="{% url "registration_register" %}" id="registration_form">
     {% csrf_token %}
           <div class="newaccount-con">
           	 <h2>YOUR PERSONAL DETAILS  <span>*Required Information</span></h2>
@@ -16,28 +16,28 @@
                     	<td><label>First Name</label></td>
                         <td><label class="red">*</label></td>
                         <td>{{form.first_name}}</td>
-                        <td>{{form.first_name.errors}}</td>
+                        <td class="registration_errors">{{form.first_name.errors}}</td>
                     </tr>
                     
                     <tr>
                     	<td><label>Last Name</label></td>
                         <td><label class="red">*</label></td>
                         <td>{{form.last_name}}</td>
-                        <td>{{form.last_name.errors}}</td>
+                        <td class="registration_errors">{{form.last_name.errors}}</td>
                     </tr>
                     
                     <tr>
                     	<td><label>E-Mail</label></td>
                         <td><label class="red">*</label></td>
                         <td>{{form.email}}</td>
-                        <td>{{form.email.errors}}</td>
+                        <td class="registration_errors">{{form.email.errors}}</td>
                     </tr>
                     
                     <tr>
                     	<td><label>Telephone</label></td>
                         <td><label class="red">*</label></td>
                         <td>{{form.phone}}</td>
-                        <td>{{form.phone.errors}}</td>
+                        <td class="registration_errors">{{form.phone.errors}}</td>
                     </tr>
  
                 </table>
@@ -50,35 +50,35 @@
                     	<td><label>Address 1</label></td>
                         <td><label class="red">*</label></td>
                         <td>{{form.address1}}</td>
-                        <td>{{form.address1.errors}}</td>
+                        <td class="registration_errors">{{form.address1.errors}}</td>
                     </tr>
                     
                     <tr>
                     	<td><label>Address 2</label></td>
                         <td><label class="red">*</label></td>
                         <td>{{form.address2}}</td>
-                        <td>{{form.address2.errors}}</td>
+                        <td class="registration_errors">{{form.address2.errors}}</td>
                     </tr>
                     
                     <tr>
                     	<td><label>City</label></td>
                         <td><label class="red">*</label></td>
                         <td>{{form.city}}</td>
-                        <td>{{form.city.errors}}</td>
+                        <td class="registration_errors">{{form.city.errors}}</td>
                     </tr>
                     
                     <tr>
                     	<td><label>Post Code</label></td>
                         <td><label class="red">*</label></td>
                         <td>{{form.zipcode}}</td>
-                        <td>{{form.zipcode.errors}}</td>
+                        <td class="registration_errors">{{form.zipcode.errors}}</td>
                     </tr>
                     
                     <tr>
                     	<td><label>Country</label></td>
                         <td><label class="red">*</label></td>
                         <td>{{form.country}}</td>
-                        <td>{{form.country.errors}}</td>
+                        <td class="registration_errors">{{form.country.errors}}</td>
                     </tr>
                     
                     
@@ -86,7 +86,7 @@
                     	<td><label>Region/Stage</label></td>
                         <td><label class="red">*</label></td>
                         <td>{{form.state}}</td>
-                        <td>{{form.state.errors}}</td>
+                        <td class="registration_errors">{{form.state.errors}}</td>
                     </tr>
 
 
@@ -104,25 +104,26 @@
                     	<td><label>Password</label></td>
                         <td><label class="red">*</label></td>
                         <td>{{form.password1}}</td>
-                        <td>{{form.password1.errors}}</td>
+                        <td class="registration_errors">{{form.password1.errors}}</td>
                     </tr>
                     
                     <tr>
                     	<td><label>Confirm Password </label></td>
                         <td><label class="red">*</label></td>
                         <td>{{form.password2}}</td>
-                        <td>{{form.password2.errors}}</td>
+                        <td class="registration_errors">{{form.password2.errors}}</td>
                     </tr>
                     
                 </table>
              </div>
              
-             <label class="aggree"><input name="" type="checkbox" value=""> I Have read and agree to the Privacy Policy</label>
+             <label class="aggree"><input name="" type="checkbox" value="" id="accept_terms"> I Have read and agree to the Privacy Policy</label>
              
              <ul>
              	<li><a href="#">Cancel</a></li>
                 <!--<li><a href="#" class="save">Save</a></li>-->
-                <input type="submit" class="save" value="{% trans 'Save' %}" />
+                <li><a class="save register_save" style="cursor:pointer;">Save</a>
+                <input type="submit" class="save register_submit" value="{% trans 'Save' %}" style="display:none;"/>    
              </ul>
              
           </div> 

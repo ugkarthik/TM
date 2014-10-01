@@ -230,8 +230,8 @@ def activate(request, activation_key, template_name='registration/activate.html'
 
 
 
-def user_login(request):
-    return render_to_response('login.html',
+def category(request):
+    return render_to_response('category.html',
                           {},
                           context_instance=RequestContext(request))
     

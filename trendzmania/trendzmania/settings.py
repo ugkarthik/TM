@@ -10,8 +10,13 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+
+from oscar import get_core_apps, OSCAR_MAIN_TEMPLATE_DIR
+from oscar.defaults import *
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+location = lambda f_name: os.path.join(BASE_DIR, f_name)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
@@ -29,13 +34,32 @@ ALLOWED_HOSTS = ['trendzmania']
 
 # Application definition
 
-INSTALLED_APPS = (
+INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
+    'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.flatpages',
+    'compressor',
+] + get_core_apps()
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    "django.contrib.auth.context_processors.auth",
+    "django.core.context_processors.request",
+    "django.core.context_processors.debug",
+    "django.core.context_processors.i18n",
+    "django.core.context_processors.media",
+    "django.core.context_processors.static",
+    "django.core.context_processors.tz",
+    "django.contrib.messages.context_processors.messages",
+    'oscar.apps.search.context_processors.search_form',
+    'oscar.apps.promotions.context_processors.promotions',
+    'oscar.apps.checkout.context_processors.checkout',
+    'oscar.apps.customer.notifications.context_processors.notifications',
+    'oscar.core.context_processors.metadata',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -46,6 +70,8 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'oscar.apps.basket.middleware.BasketMiddleware',
+    'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
 )
 
 ROOT_URLCONF = 'trendzmania.urls'
@@ -62,7 +88,8 @@ DATABASES = {
         'NAME': 'trendzmania',
         'USER': 'trendzmania',
         'PASSWORD': '',
-        'HOST': ''
+        'HOST': '',
+        'ATOMIC_REQUESTS': True,
     }
 }
 
@@ -80,18 +107,45 @@ USE_L10N = True
 USE_TZ = True
 
 
+MEDIA_ROOT = location("media")
+
+MEDIA_URL = '/media/'
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
 
+STATIC_ROOT = location('static')
+
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static/'),
+    location('static'),
 )
 
 TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR, 'templates/'),
+    location('templates'),
+    OSCAR_MAIN_TEMPLATE_DIR,
 )
+
+AUTHENTICATION_BACKENDS = (
+    'oscar.apps.customer.auth_backends.EmailBackend',
+    'django.contrib.auth.backends.ModelBackend',
+)
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+    }
+}
+
+# Haystack settings - we use a local Solr instance running on the default port
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.solr_backend.SolrEngine',
+        'URL': 'http://127.0.0.1:8983/solr',
+        'INCLUDE_SPELLING': True,
+    },
+}
 
 try:
     from local_settings import *

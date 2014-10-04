@@ -234,6 +234,11 @@ def category(request):
     return render_to_response('category.html',
                           {},
                           context_instance=RequestContext(request))
+
+def category_details(request):
+    return render_to_response('category_details.html',
+                          {},
+                          context_instance=RequestContext(request))
     
     
     

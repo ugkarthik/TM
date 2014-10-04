@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, url, include
 from django.views.generic.base import TemplateView
-from tm.views import Home, ShoppingBag,RegistrationView,activate,category
+from tm.views import Home, ShoppingBag,RegistrationView,activate,category,category_details
 from tm.forms import UserAuthenticationForm
 
 urlpatterns = patterns('',
@@ -18,4 +18,4 @@ urlpatterns = patterns('',
                        url(r'^reset/(?P<uidb36>[0-9A-Za-z]{1,13})-(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$','django.contrib.auth.views.password_reset_confirm',name='auth_password_reset_confirm'),
                        url(r'^reset/done/$', 'django.contrib.auth.views.password_reset_complete',name='auth_password_reset_complete'),
                        url(r'^category/$', category,name='category'),
-                        )
+                       url(r'^category_details/$', category_details,name='category_details'), )

@@ -1,4 +1,5 @@
 *.pyc
+*migrations/*.py
 
 # Local settings
 trendzmania/trendzmania/local_settings.py

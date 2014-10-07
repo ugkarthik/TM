@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
     'django.contrib.flatpages',
     'compressor',
 ] + get_core_apps()
@@ -60,6 +61,9 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'oscar.apps.checkout.context_processors.checkout',
     'oscar.apps.customer.notifications.context_processors.notifications',
     'oscar.core.context_processors.metadata',
+=======
+    'tm'
+>>>>>>> sakthi
 )
 
 MIDDLEWARE_CLASSES = (

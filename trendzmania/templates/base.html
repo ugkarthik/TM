@@ -74,8 +74,12 @@
              </div>
             
             <div id="toolbar" class="top-toolbar top-toolbar-desktop">
-            	<ul>
+            	<ul>    {% if user.is_authenticated %}
+		        <li><span>Welcome, {{user}}</span></li>
+			 <li><a href="{% url "auth_logout" %}">Logout</a></li>
+		        {% else %}
                 	<li><span>Welcome, Sign In</span></li>
+			{% endif %}
                     <li><a href="#">Chat</a></li>
                     <li><a href="#">Shop With Confidence</a></li>
                     <li><a href="#"class=" dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">Saks Bag (0)</a>

@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Log in" %}{% endblock %}
+
+{% block content %}
+<form method="post" action="{% url "auth_login" %}">
+    {% csrf_token %}
+    <div class="content-area">
+      <div class="container">
+         <div class="signin-content">
+         	<h3>Account Sign-In</h3>
+         	<div class="signinLeft signin-con">
+            	<h2>Sign-in to your account</h2>
+                <span>You habe previously created an account at Saks.com</span>
+                
+                <h4>*Required <i>Information</i></h4>
+                <table>
+                <tr>
+                <td><label>*</label></td>
+                <td><label>Email Address</label></td>
+                </tr>
+                <tr>
+                 <td><label class="red">*</label></td>
+                <td>{{form.username}}</td>
+                <td>{{form.username.errors}}</td>
+                </tr>
+                
+                <tr>
+                 <td><label>*</label></td>
+                <td><label>Password</label></td>
+                </tr>
+                <tr>
+                <td><label class="red">*</label></td>
+                <td>{{form.password}}</td>
+                <td>{{form.password.errors}}</td>
+                </tr>
+                 </table>
+                
+                <a href="#">Forgot Password?</a>
+                
+               <!-- <a href="#" class="signin">Sign In</a>-->
+                <input type="submit" class="signin" value="{% trans 'Log in' %}" />
+            </div>
+            <div class="signinright signin-con">
+            	<h2>Create An account</h2>
+                <span>You have not created an account at Saks.com</span>
+                
+                <p> Creating An Account Lets You:</p>
+                <ul>
+                    <li>Save your information to take advantage of a faster checkout process</li>
+                    <li>Review your order history online</li>
+                    <li>Track your packages</li>
+                    <li> Check your SaksFirst rewards</li>
+                    <li> Write and submit product reviews</li>
+                </ul>
+ 				<a href="{% url "registration_register" %}" class="signin">Create An Account</a>
+            </div>
+         </div> 
+      </div>
+  </div>
+    <!--<input type="submit" value="{% trans 'Log in' %}" />-->
+    <input type="hidden" name="next" value="/" />
+</form>
+
+<!--<p>{% trans "Forgot your password?" %} <a href="{% url 'auth_password_reset' %}">{% trans "Reset it" %}</a>.</p>
+<p>{% trans "Not a member?" %} <a href="{% url 'registration_register' %}">{% trans "Register" %}</a>.</p>-->
+{% endblock %}
+
+
+{% comment %}
+**registration/login.html**
+
+It's your responsibility to provide the login form in a template called
+registration/login.html by default. This template gets passed four
+template context variables:
+
+``form``
+    A Form object representing the login form. See the forms
+    documentation for more on Form objects.
+
+``next``
+    The URL to redirect to after successful login. This may contain a
+    query string, too.
+
+``site``
+    The current Site, according to the SITE_ID setting. If you don't
+    have the site framework installed, this will be set to an instance
+    of RequestSite, which derives the site name and domain from the
+    current HttpRequest.
+
+``site_name``
+    An alias for site.name. If you don't have the site framework
+    installed, this will be set to the value of
+    request.META['SERVER_NAME']. For more on sites, see The
+    "sites" framework.
+{% endcomment %}

@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Register for an account" %}{% endblock %}
+
+{% block content %}
+<form method="post" action="{% url "registration_register" %}">
+    {% csrf_token %}
+   <div class="content-area">
+      <div class="container">
+         <div class="signin-content">
+         	<h3>Account Sign-In</h3>
+         	<div class="signinLeft signin-con">
+            	<h2>Sign-in to your account</h2>
+                <span>You have previously created an account at Saks.com</span>
+                {{form}}
+                {{form.errors}}
+                <h4>*Required <i>Information</i></h4>
+                <table >
+                <tr>
+                <td><label>*</label></td>
+                <td><label>Email Address</label></td>
+                </tr>
+                <tr>
+                 <td><label class="red">*</label></td>
+                <td>{{form.email}}</td>
+                </tr>
+                
+                <tr>
+                 <td><label>*</label></td>
+                <td><label>Password</label></td>
+                </tr>
+                <tr>
+                <td><label class="red">*</label></td>
+                <td>{{form.password}}</td>
+                </tr>
+                 </table>
+                
+                <a href="#">Forgot Password?</a>
+                
+                <a href="#" class="signin">Sign In</a>
+            </div>
+            <div class="signinright signin-con">
+            	<h2>Create An account</h2>
+                <span>You have not created an account at Saks.com</span>
+                
+                <p> Creating An Account Lets You:</p>
+                <ul>
+                    <li>Save your information to take advantage of a faster checkout process</li>
+                    <li>Review your order history online</li>
+                    <li>Track your packages</li>
+                    <li> Check your SaksFirst rewards</li>
+                    <li> Write and submit product reviews</li>
+                </ul>
+ 				<a href="{% url "registration_register" %}" class="signin">Create An Account</a>
+            </div>
+         </div> 
+      </div>
+  </div>
+   
+</form>
+{% endblock %}
+
+
+{% comment %}
+**registration/registration_form.html**
+Used to show the form users will fill out to register. By default, has
+the following context:
+
+``form``
+    The registration form. This will be an instance of some subclass
+    of ``django.forms.Form``; consult `Django's forms documentation
+    <http://docs.djangoproject.com/en/dev/topics/forms/>`_ for
+    information on how to display this in a template.
+{% endcomment %}

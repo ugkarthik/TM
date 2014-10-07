@@ -1,0 +1,76 @@
+.ac-container{
+	width: 400px;
+	margin: 10px auto 30px auto;
+	text-align: left;
+}
+.ac-container label{
+	font-family:Arial, Helvetica, sans-serif;
+	padding: 5px 0;
+	position: relative;
+	z-index: 20;
+	display: block;
+	height:auto;
+	cursor: pointer;
+	color: #000;
+	 
+	font-size: 14px;
+	font-weight:normal;
+	background: transparent url(../images/downarrow.png) no-repeat right center;	 
+}
+.ac-container label:hover{
+	background: #fff;
+}
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover{
+ 
+}
+.ac-container label:hover:after,
+.ac-container input:checked + label:after{
+	content: '';
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 0;
+	top: 3px;
+	background: transparent url(../images/downarrow.png) no-repeat right center;		
+}
+.ac-container input:checked + label:after{
+	 
+	background: transparent url(../images/uparrow.png) no-repeat right center;	
+}
+.ac-container input{
+	display: none;
+}
+.ac-container article{
+	background: rgba(255, 255, 255, 0.5);
+	margin-top: -1px;
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+	z-index: 10;
+	-webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+.ac-container article p{
+	font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000; margin:0; padding:0;
+	 
+}
+
+.ac-container article ul{ margin:0; padding:0;}
+.ac-container article ul li{ display:block; background:url(../images/list-icon3.png) no-repeat 0 50%; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000; padding:0 0 0 10px; margin:0 0 8px 0;}
+
+.ac-container input:checked ~ article{
+ 
+}
+.ac-container input:checked ~ article.ac-small{
+	height: 140px;
+}
+.ac-container input:checked ~ article.ac-medium{
+	height: 180px;
+}
+.ac-container input:checked ~ article.ac-large{
+	height: 260px;
+}

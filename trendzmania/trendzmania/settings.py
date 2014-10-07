@@ -119,7 +119,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = location('static')
 
 STATICFILES_DIRS = (
-    location('static'),
+    location('public/static'),
 )
 
 TEMPLATE_DIRS = (
@@ -146,6 +146,8 @@ HAYSTACK_CONNECTIONS = {
         'INCLUDE_SPELLING': True,
     },
 }
+
+SITE_ID = 1
 
 try:
     from local_settings import *
